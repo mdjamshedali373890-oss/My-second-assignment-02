@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+body {
+  margin: 0 auto;
+  background: #242222;
+}
+/* Nave style */
+
+.span1 {
+  color: white;
+}
+.span2 {
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 6, 6),
+    rgb(255, 5, 180),
+    rgb(250, 238, 3)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav_btn {
+  cursor: pointer;
+  background: linear-gradient(
+    to bottom,
+    rgb(243, 6, 6),
+    rgb(248, 20, 179),
+    rgb(238, 59, 184),
+    rgb(250, 238, 3)
+  );
+}
