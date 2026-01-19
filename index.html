@@ -125,7 +125,7 @@
         <h1 class="text-center">Why Choose TechWave</h1>
 
         <div class="card_container mt-7">
-          <div class="headphone_card p-2.5 bg-[#241538] rounded-s-md">
+          <div class="common_card_animation headphone_card p-2.5 bg-[#241538] rounded-s-md">
             <div>
               <img src="assets/headphone.png" alt="" />
               <h2 class="font-bold text-xl py-2.5">Premium Audio Quality</h2>
@@ -137,7 +137,7 @@
             </div>
           </div>
 
-          <div class="device_card p-2.5 bg-[#241538] rounded-s-md">
+          <div class="common_card_animation device_card p-2.5 bg-[#241538] rounded-s-md">
             <img src="assets/device.png" alt="" />
             <h2 class="font-bold text-xl py-2.5">Mobile Friendly</h2>
             <p class="text-[10px]">
@@ -146,7 +146,7 @@
             </p>
           </div>
 
-          <div class="location_card p-2.5 bg-[#241538] rounded-s-md">
+          <div class="common_card_animation location_card p-2.5 bg-[#241538] rounded-s-md">
             <img src="assets/location.png" alt="" />
             <h2 class="font-bold text-xl py-2.5">Global Community</h2>
             <p class="text-[10px]">
@@ -154,8 +154,8 @@
             </p>
           </div>
 
-          <div class="Exclusive_card p-2.5 bg-[#241538] rounded-s-md">
-            <img src="assets/headphone.png" alt="" />
+          <div class="common_card_animation Exclusive_card p-2.5 bg-[#241538] rounded-s-md">
+            <img class="w-14 h-13" src="assets/Exclusive.png" alt="" />
             <h2 class="font-bold text-xl py-2.5">Exclusive Interviews</h2>
             <p class="text-[10px]">
               Get unprecedented access to industry titans, startup founders, and
@@ -165,7 +165,7 @@
             </p>
           </div>
 
-          <div class="resource_card p-2.5 bg-[#241538] rounded-s-md">
+          <div class="common_card_animation resource_card p-2.5 bg-[#241538] rounded-s-md">
             <img src="assets/resource.png" alt="" />
             <h2 class="font-bold text-xl py-2.5">Rich Resources</h2>
             <p class="text-[10px]">
@@ -173,6 +173,7 @@
               for every episode.
             </p>
           </div>
+
         </div>
       </div>
 
@@ -180,7 +181,7 @@
         <h1 class="text-center text-white my-9">Featured Episodes</h1>
 
         <div class="flex gap-3.5">
-          <div class="bg-[#241538] p-2.5">
+          <div class="card_action bg-[#241538] p-2.5">
             <a href="https://www.youtube.com/watch?v=QJBP3LTSJ7o"
               ><img class="w-full h-40 rounded-md" src="assets/pic1.jpg" alt=""
             /></a>
@@ -198,7 +199,7 @@
             </div>
           </div>
 
-          <div class="bg-[#241538] p-2.5">
+          <div class="card_action bg-[#241538] p-2.5">
             <a href="https://www.youtube.com/watch?v=HG10yrq1pbk"
               ><img class="w-full h-40 rounded-md" src="assets/pic2.jpg" alt=""
             /></a>
@@ -216,7 +217,7 @@
             </div>
           </div>
 
-          <div class="bg-[#241538] p-2.5">
+          <div class="card_action bg-[#241538] p-2.5">
             <a href="https://www.youtube.com/watch?v=a8_vMTW-70M"
               ><img class="w-full h-40 rounded-md" src="assets/pic3.jpg" alt=""
             /></a>
@@ -240,7 +241,7 @@
         <h1 class="my-7 text-center text-2xl font-bold">Meet the Host</h1>
 
         <div class="p-4 flex gap-6 bg-[#241538] items-center">
-          <div><img src="assets/host.png" alt="" /></div>
+          <div><img class="rounded_profile" src="assets/host.png" alt="" /></div>
           <div>
             <h1 class="text-[18px] font-bold px-4">Md Ali</h1>
             <p class="text-[12px] my-4 px-4">
@@ -250,11 +251,11 @@
               insights from industry leaders and practical advice for anyone
               looking to grow in tech.
             </p>
-            <div class="flex items-center gap-4 px-4">
-              <img src="assets/linkedin.png" alt="" />
-              <img src="assets/x.png" alt="" />
-              <img src="assets/instagram.png" alt="" />
-              <img src="assets/youtube.png" alt="" />
+            <div class="flex items-center gap-6 px-4">
+              <img class="host_social_link" src="assets/linkedin.png" alt="" />
+              <img class="host_social_link" src="assets/x.png" alt="" />
+              <img class="host_social_link" src="assets/instagram.png" alt="" />
+              <img class="host_social_link" src="assets/youtube.png" alt="" />
             </div>
           </div>
         </div>
@@ -264,19 +265,19 @@
     <footer class="flex justify-center items-center footer_section text-white">
       <div class="px-10 text-center">
         <div class="text-5xl font-bold">
-          <span class="span1">Tech</span>
-          <span class="span2">Wave</span>
+          <span class="left_dge span1">Tech</span>
+          <span class="right_dge span2">Wave</span>
         </div>
-        <div class="py-6 flex justify-center items-center gap-2 text-[10px]">
-          <img class="w-4 h-4" src="assets/spotify.png" alt="" />
-          <h3>Spotify</h3>
-          <img class="w-4 h-4" src="assets/apple-podcast.png" alt="" />
-          <h3>Apple Podcasts</h3>
-          <img class="w-4 h-4" src="assets/youtube-podcast.png" alt="" />
-          <h3>YouTube</h3>
-          <img class="w-4 h-4" src="assets/twitter.png" alt="" />
-          <h3>Twitter</h3>
-        </div>
+        <section class="py-6 flex justify-center items-center gap-4.5 text-[10px]">
+          <div class="techwave_social_link flex justify-center items-center gap-1"><img class=" w-4 h-4" src="assets/spotify.png" alt="" />
+          <h3>Spotify</h3></div>
+          <div class="techwave_social_link flex justify-center items-center gap-1"><img class="w-4 h-4" src="assets/apple-podcast.png" alt="" />
+          <h3>Apple Podcasts</h3></div>
+          <div class="techwave_social_link flex justify-center items-center gap-1"><img class="w-4 h-4" src="assets/youtube-podcast.png" alt="" />
+          <h3>YouTube</h3></div>
+          <div class="techwave_social_link flex justify-center items-center gap-1"><img class="w-4 h-4" src="assets/twitter.png" alt="" />
+          <h3>Twitter</h3></div>
+        </section>
         <p>© 2026 TechWave Podcast. All rights reserved.</p>
       </div>
     </footer>
