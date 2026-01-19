@@ -2,9 +2,11 @@
 
 body {
   margin: 0 auto;
-  background: #242222;
+  padding: 20px;
+  /* background: #1A0B2E; */
 }
-/* Nave style */
+
+/* Nav style */
 
 .span1 {
   color: white;
@@ -20,12 +22,78 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .nav_btn {
+  color: white;
+  border: 2px solid rgb(255, 5, 180);
   cursor: pointer;
-  background: linear-gradient(
-    to bottom,
-    rgb(243, 6, 6),
-    rgb(248, 20, 179),
-    rgb(238, 59, 184),
-    rgb(250, 238, 3)
+  background-color: rgb(86, 85, 85);
+  background-image: radial-gradient(
+    circle,
+    rgb(255, 5, 180) 50%,
+    transparent 50%
   );
+  background-size: 0% 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.8s ease,
+    transform 0.8s ease;
+}
+
+.nav_btn:hover {
+  transform: scale(1.2);
+  background-size: 200% 200%;
+}
+.nav_anchor {
+  cursor: pointer;
+  transition:
+    color 0.8s ease,
+    transform 0.8s ease;
+}
+.nav_anchor:hover {
+  color: rgb(255, 5, 180);
+  transform: scale(1.2);
+  background-size: 200% 200%;
+}
+/* Banner section */
+
+.banner_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background: no-repeat;
+}
+.hero_circle {
+}
+.microphone {
+}
+/* main section card part */
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.1em;
+}
+.headphone_card {
+  grid-row: span 2;
+}
+.device_card,
+.location_card,
+.Exclusive_card {
+  grid-column: span 2;
+}
+.resource_card {
+  grid-column: span 1;
+}
+.footer_section {
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-position: center;
+  background-size: 100% 100%;
 }
