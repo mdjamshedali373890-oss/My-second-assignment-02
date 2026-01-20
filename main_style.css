@@ -7,7 +7,8 @@ body {
 
   margin: 0 auto;
   padding: 20px;
-  background: #1a0b2e;
+  /* background: #1a0b2e; */
+   background: #f7f5f8; 
 }
 
 /* Nav style */
@@ -64,7 +65,7 @@ body {
   background-image: url("assets/hero-bg.png");
   position: relative;
   width: 100%;
-  height: 640px;
+  height: 655px;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -94,11 +95,13 @@ body {
   background: linear-gradient(to right, rgb(238, 238, 12), #f41c1c, #2825e0);
   width: 12em;
   height: 3em;
-  border:none;
+  border: none;
   border-radius: 20px;
-  transition: background-size 1s ease,transform 1s ease;
+  transition:
+    background-size 1s ease,
+    transform 1s ease;
 }
-.btn_img1:hover{
+.btn_img1:hover {
   color: white;
   transform: scale(1.1);
   background-size: 200% 200%;
@@ -115,18 +118,18 @@ body {
   height: 3em;
   border: 1px solid #e97676;
   border-radius: 20px;
-  transition:background-size
-     1s ease,
+  transition:
+    background-size 1s ease,
     transform 1s ease;
 }
 .btn_img2:hover {
   background: linear-gradient(to right, rgb(243, 243, 16), #f91a1a, #211df5);
   color: white;
-   transform: scale(1.1);
+  transform: scale(1.1);
   background-size: 200% 200%;
 }
-.hero_circle{
-  animation:hero_circle 1s linear infinite
+.hero_circle {
+  animation: hero_circle 1s linear infinite;
 }
 @keyframes hero_circle {
   from {
@@ -137,7 +140,7 @@ body {
   }
 }
 
-.microphone{
+.microphone {
   animation: microphone 1s linear infinite;
 }
 @keyframes microphone {
@@ -155,9 +158,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1.2em;
+  gap: 1.5em;
 }
-.headphone_card {
+.headphone_card { 
   grid-row: span 2;
 }
 .device_card,
@@ -168,46 +171,53 @@ body {
 .resource_card {
   grid-column: span 1;
 }
-.common_card_animation{
+.common_card_animation {
   opacity: 1;
-transition: card_left 0.8s ease, transform 0.8s ease;
+  transition:
+    card_left 0.8s ease,
+    transform 0.8s ease;
 }
-.common_card_animation:hover{
+.common_card_animation:hover {
   opacity: 0.8;
   background-color: rgba(240, 136, 136, 0.6);
   transform: scale(1.1);
 }
 
 /* card animation */
-.card_action{
-  transition: card_left 0.8s ease, transform 0.8s ease;
+.card_action {
+  transition:
+    card_left 0.8s ease,
+    transform 0.8s ease;
 }
 .card_action:hover {
   transform: scale(1.1);
-
 }
 /* Host social link */
 
-.host_social_link{
+.host_social_link {
   cursor: pointer;
-  transition: card_left 0.7s ease, transform 0.7s ease;
+  transition:
+    card_left 0.7s ease,
+    transform 0.7s ease;
 }
-.host_social_link:hover{
+.host_social_link:hover {
   transform: scale(1.5);
 }
-.techwave_social_link{
+.techwave_social_link {
   cursor: pointer;
-  transition: card_left 0.7s ease, transform 0.7s ease;
+  transition:
+    card_left 0.7s ease,
+    transform 0.7s ease;
 }
-.techwave_social_link:hover{
+.techwave_social_link:hover {
   transform: scale(1.3);
 }
 
-.rounded_profile{
+.rounded_profile {
   cursor: pointer;
   animation: microphone 1s linear infinite;
 }
-.rounded_profile:hover{
+.rounded_profile:hover {
   animation: none;
 }
 @keyframes rounded_profile {
@@ -220,25 +230,28 @@ transition: card_left 0.8s ease, transform 0.8s ease;
 }
 
 /* Tech Wave Animation */
-.left_dge{
+.left_dge {
   cursor: pointer;
   display: inline-block;
-  transition:left_dge 1s ease, transform 1s ease;
+  transition:
+    left_dge 1s ease,
+    transform 1s ease;
 }
-.left_dge:hover{
+.left_dge:hover {
   transform: rotate(-60deg);
 }
-.right_dge{
+.right_dge {
   cursor: pointer;
   display: inline-block;
-  transition:right_dge 1s ease, transform 1s ease;
+  transition:
+    right_dge 1s ease,
+    transform 1s ease;
 }
-.right_dge:hover{
+.right_dge:hover {
   transform: rotate(60deg);
 }
 
 .footer_section {
-  padding: 20px 0px;
   position: relative;
   width: 100%;
   height: 300px;
@@ -247,4 +260,47 @@ transition: card_left 0.8s ease, transform 0.8s ease;
   background-attachment: scroll;
   background-position: center;
   background-size: 100% 100%;
+}
+/* responsive layout */
+@media screen and (max-width: 576px) {
+  body {
+    padding: 10px; 
+  }
+  .banner_container {
+  background-size: 200% 100%;
+}
+.hero_circle{
+  width: 200px;
+  height: 200px;
+}
+.microphone{
+  width: 45px;
+  height: 50px;
+}
+.about_product{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card_container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.Featured_card{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.host_respons{
+  display: flex;
+  flex-direction: column;
+}
+.host_text_config{
+  text-align: center;
+}
+.host_link_config{
+  justify-content: center;
+}
+.footer_section {
+  background-size: 200% 100%;
+
+}
 }
