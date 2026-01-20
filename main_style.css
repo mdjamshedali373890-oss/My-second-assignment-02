@@ -8,7 +8,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   background: #1a0b2e;
-   
 }
 
 /* Nav style */
@@ -48,7 +47,7 @@ body {
   transform: scale(1.2);
   background-size: 200% 200%;
 }
-.nav_menu{
+.nav_menu {
   display: none;
 }
 .nav_anchor {
@@ -163,7 +162,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   gap: 1.5em;
 }
-.headphone_card { 
+.headphone_card {
   grid-row: span 2;
 }
 .device_card,
@@ -183,7 +182,7 @@ body {
 .common_card_animation:hover {
   opacity: 0.8;
   background-color: rgba(240, 136, 136, 0.6);
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 
 /* card animation */
@@ -193,7 +192,7 @@ body {
     transform 0.8s ease;
 }
 .card_action:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 /* Host social link */
 
@@ -264,63 +263,65 @@ body {
   background-position: center;
   background-size: 100% 100%;
 }
+
 /* responsive layout */
 @media screen and (max-width: 576px) {
   body {
-    padding: 10px; 
+    padding: 10px;
   }
-  .nav_btn{
+  .nav_btn {
     display: none;
   }
-  .nav_meddle_item{
+  .nav_meddle_item {
     display: none;
   }
-  .nav_menu{
+  .nav_menu {
     display: inline;
     cursor: pointer;
     transition:
-    nav_menu 0.8s ease,
-    transform 0.8s ease;
+      nav_menu 0.8s ease,
+      transform 0.8s ease;
   }
-  .nav_menu:hover{
- transform: scale(1.5) rotate(360deg);
+  .nav_menu:hover {
+    transform: scale(1.5) rotate(360deg);
   }
   .banner_container {
-  background-size: 200% 100%;
-}
-.hero_circle{
-  width: 200px;
-  height: 200px;
-}
-.microphone{
-  width: 45px;
-  height: 50px;
-}
-.about_product{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.card_container{
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.Featured_card{
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.host_respons{
-  display: flex;
-  flex-direction: column;
-}
-.host_text_config{
-  text-align: center;
-}
-.host_link_config{
-  justify-content: center;
-}
-.footer_section {
-  background-size: 200% 100%;
-
-}
-
+    background-size: 200% 100%;
+  }
+  .hero_circle {
+    width: 200px;
+    height: 200px;
+  }
+  .microphone {
+    width: 45px;
+    height: 50px;
+  }
+  .about_product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Featured_card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .host_respons {
+    display: flex;
+    flex-direction: column;
+  }
+  .host_text_config {
+    text-align: center;
+  }
+  .host_link_config {
+    justify-content: center;
+  }
+  .footer_section {
+    background-size: 200% 100%;
+  }
+  .footer_text_div {
+    padding: 40px;
+  }
 }
