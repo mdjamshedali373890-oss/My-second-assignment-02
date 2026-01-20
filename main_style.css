@@ -331,4 +331,8 @@ body {
   .footer_text_div {
     padding: 40px;
   }
+  .footer_social_link_arrange {
+    display: flex;
+    flex-direction: column;
+  }
 }
