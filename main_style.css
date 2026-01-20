@@ -12,8 +12,15 @@ body {
 
 /* Nav style */
 
-.span1 {
-  color: white;
+.tech_wave_scaleing {
+  display: inline-block;
+  transition:
+    span5 0.8s ease,
+    transform 0.8s ease;
+}
+
+.tech_wave_scaleing:hover {
+  transform: scale(1.2);
 }
 .span2 {
   background: linear-gradient(
