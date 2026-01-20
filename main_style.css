@@ -293,7 +293,7 @@ body {
     transform: scale(1.5) rotate(360deg);
   }
   .banner_container {
-    background-size: 200% 100%;
+    background-size: 250% 100%;
   }
   .hero_circle {
     width: 200px;
