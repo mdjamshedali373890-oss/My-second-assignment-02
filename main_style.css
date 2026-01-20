@@ -7,8 +7,8 @@ body {
 
   margin: 0 auto;
   padding: 20px;
-  /* background: #1a0b2e; */
-   background: #f7f5f8; 
+  background: #1a0b2e;
+   
 }
 
 /* Nav style */
@@ -47,6 +47,9 @@ body {
 .nav_btn:hover {
   transform: scale(1.2);
   background-size: 200% 200%;
+}
+.nav_menu{
+  display: none;
 }
 .nav_anchor {
   cursor: pointer;
@@ -266,6 +269,22 @@ body {
   body {
     padding: 10px; 
   }
+  .nav_btn{
+    display: none;
+  }
+  .nav_meddle_item{
+    display: none;
+  }
+  .nav_menu{
+    display: inline;
+    cursor: pointer;
+    transition:
+    nav_menu 0.8s ease,
+    transform 0.8s ease;
+  }
+  .nav_menu:hover{
+ transform: scale(1.5) rotate(360deg);
+  }
   .banner_container {
   background-size: 200% 100%;
 }
@@ -303,4 +322,5 @@ body {
   background-size: 200% 100%;
 
 }
+
 }
